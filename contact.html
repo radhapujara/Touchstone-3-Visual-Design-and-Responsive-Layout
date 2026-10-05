@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact North Star Bakery or send a pre-order request.">
+  <title>Contact &amp; Pre-Orders | North Star Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="North Star Bakery home">
+        <span class="brand-mark" aria-hidden="true">NS</span>
+        <span>North Star <strong>Bakery</strong></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a aria-current="page" href="contact.html">Contact &amp; Pre-Orders</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="content-width page-content">
+    <header class="page-heading">
+      <p class="eyebrow">We would love to hear from you</p>
+      <h1>Let's plan something fresh.</h1>
+      <p>Ask a question or tell us what you need for your next gathering. Please include enough detail for our bakery team to understand your request.</p>
+    </header>
+
+    <div class="contact-layout">
+      <section class="form-panel" aria-labelledby="request-heading">
+        <h2 id="request-heading">Send a request</h2>
+        <p class="form-note">Fields marked required must be completed. This sample form does not submit orders online.</p>
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Your contact information</legend>
+            <div class="form-field">
+              <label for="name">Full name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email address <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number (optional)</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" aria-describedby="phone-hint">
+              <small id="phone-hint">Use the format 555-555-5555.</small>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>What can we help with?</legend>
+            <div class="form-field">
+              <label for="request-type">Request type <span aria-hidden="true">*</span></label>
+              <select id="request-type" name="request-type" required>
+                <option value="">Choose one</option>
+                <option value="preorder">Pre-order request</option>
+                <option value="question">General question</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="pickup-date">Preferred pickup date <span aria-hidden="true">*</span></label>
+              <input type="date" id="pickup-date" name="pickup-date" required>
+            </div>
+            <div class="form-field">
+              <label for="details">Item details <span aria-hidden="true">*</span></label>
+              <textarea id="details" name="details" rows="5" required></textarea>
+            </div>
+            <div class="form-field">
+              <label for="allergies">Allergy notes (optional)</label>
+              <textarea id="allergies" name="allergies" rows="3"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button-link" type="submit">Send request</button>
+            <button class="button-reset" type="reset">Clear form</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="visit-card">
+        <p class="eyebrow">Visit the bakery</p>
+        <h2>Find us on Main Street.</h2>
+        <address>123 Main Street<br>North Star Neighborhood</address>
+        <h3>Hours</h3>
+        <ul class="hours-list">
+          <li><span>Monday-Saturday</span><span>7:00 AM-6:00 PM</span></li>
+          <li><span>Sunday</span><span>8:00 AM-2:00 PM</span></li>
+        </ul>
+        <p>We recommend getting in touch early for larger or custom orders.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="content-width footer-inner">
+      <p>&copy; 2026 North Star Bakery</p>
+      <a href="products.html">Browse breads, pastries, and cakes.</a>
+    </div>
+  </footer>
+</body>
+</html>
